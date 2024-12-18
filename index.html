@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1">
+    <meta name="author" content="Samuel Reutcky, Myles Reid, Dave Sommerville">
+    <meta name="description" content="My Web Project">
+    <meta name="keywords" content="html, css, seo, web devlopment">
+    <title>HiveMind</title>
+    <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script src="./src/js/index.js" type="module"></script>
+  </head>
+  <body>
+    <main class="container flex">
+      <img src="./src/img/hexa-vector.png" class="title-image">
+      <div class="form-container flex f-col">
+        <h2 class="form-title">Welcome to <span>HiveMind</span></h2>
+        <form class="login-form flex f-col">
+          <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="username-input" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="password-input" name="password" required>
+          </div>
+          <div class="form-group flex">
+            <label>
+              <input type="checkbox" class="remember-me-checkbox"> Remember Me
+            </label>
+            <p class="forgot-password">Forgot Password?</a>
+          </div>
+          <div class="form-actions flex">
+            <button type="button" class="login-btn">Login</button>
+            <button type="button" class="create-account-btn">Sign Up</button>
+          </div>
+        </form>
+        <div class="error-wrapper">
+          <p class="error password-error username-error"></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

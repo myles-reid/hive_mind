@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1">
+    <meta name="author" content="Samuel Reutcky, Myles Reid, Dave Sommerville">
+    <meta name="description" content="My Web Project">
+    <meta name="keywords" content="html, css, seo, web devlopment">
+    <title>HiveMind</title>
+    <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="./src/js/app.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container flex flex-between">
+        <div class="flex">
+          <img src="./src/img/favicon.png" alt="HiveMind">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="flex gap-20">
+          <input type="radio" class="radio-button" label="Home" name="radiobtn" checked>
+          <input type="radio" class="radio-button" label="People" name="radiobtn">
+          <input type="radio" class="radio-button" label="Watch" name="radiobtn">
+        </div>
+        <div class="flex icons">
+          <div class="circle"><i class="fa-solid fa-comment"></i></div>
+          <div class="circle"><i class="fa-solid fa-bell"></i></div>
+          <div class="circle picture"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <div>
+            <aside class="user-profile">
+              <div class="edit-profile"><i class="fa-solid fa-pen"></i></div>
+              <figure class="profile-image">
+                <img src="./src/img/profile-pic.jpg" alt="BEST TEACHER EVER!!!">
+              </figure>
+              <div class="user-info">
+                <h4 class="user-name">Andre Specht</h4>
+                <p class="user-title">Software and Web Development Instructor</p>
+                <p class="user-location">Winnipeg, MB</p>
+              </div>
+              <div class="user-stats">
+                <div class="connection-number">
+                  <h5>Contacts</h5>
+                  <p>355</p>
+                </div>
+                <div class="posts-number">
+                  <h5>Posts</h5>
+                  <p>40</p>
+                </div>
+              </div>
+              <div class="premium-ad">
+                <p class="ad-text">Gain access to all features with premium</p>
+                <button class="upgrade-button">
+                  <i class="fa-solid fa-crown"></i>Upgrade
+                </button>
+              </div>
+            </aside>
+            <aside class="navigation flex">
+              <ul class="icons">
+                <li>
+                  <i class="fa-solid fa-bookmark"></i> 
+                </li>
+                <li>
+                  <i class="fa-solid fa-people-group"></i> 
+                </li>
+                <li>
+                  <i class="fa-solid fa-newspaper"></i> 
+                </li>
+                <li>
+                  <i class="fa-regular fa-calendar-days"></i> 
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Saved
+                </li>
+                <li>
+                  Groups
+                </li>
+                <li>
+                  Newsletters
+                </li>
+                <li>
+                  Events
+                </li>
+              </ul>
+            </aside>  
+          </div>
+          <section class="user-feed">
+            <div class="post-box">
+              <textarea class="text-box" placeholder="What's on your mind?"></textarea>
+              <div class="post-options">
+                <div class="post-type">
+                  <div class="image-post flex">
+                    <i class="fa-regular fa-image fa-flip-horizontal"></i>
+                    <p>Media</p>
+                  </div>
+                  <div class="article-post flex">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Event</p>
+                  </div>
+                  <div class="video-post flex">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <p>Article</p>
+                  </div>
+                </div>
+                <div class="post-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1.7em" fill="currentColor" viewBox="0 0 512 512">
+                    <path
+                      d="M 24.758220502901352 54.963249516441 Q 17.825918762088975 62.885880077369436 22.777562862669246 72.78916827852998 L 109.926499032882 248.07736943907156 L 109.926499032882 248.07736943907156 L 494.174081237911 248.07736943907156 L 494.174081237911 248.07736943907156 Q 491.20309477756285 244.11605415860734 486.2514506769826 241.1450676982592 L 42.58413926499033 51.00193423597679 L 42.58413926499033 51.00193423597679 Q 32.680851063829785 47.04061895551257 24.758220502901352 54.963249516441 L 24.758220502901352 54.963249516441 Z M 109.926499032882 263.92263056092844 L 22.777562862669246 439.21083172147 L 109.926499032882 263.92263056092844 L 22.777562862669246 439.21083172147 Q 17.825918762088975 449.11411992263055 24.758220502901352 457.036750483559 Q 32.680851063829785 463.96905222437135 42.58413926499033 460.99806576402324 L 49.516441005802704 474.86266924564796 L 49.516441005802704 474.86266924564796 Q 28.719535783365572 482.7852998065764 13.864603481624759 467.9303675048356 Q 0 451.09477756286265 7.922630560928433 432.27852998065765 L 96.06189555125725 256 L 96.06189555125725 256 L 7.922630560928433 79.72147001934236 L 7.922630560928433 79.72147001934236 Q 0 60.90522243713733 13.864603481624759 44.06963249516441 Q 28.719535783365572 29.214700193423596 49.516441005802704 37.13733075435203 L 493.18375241779495 227.28046421663444 L 493.18375241779495 227.28046421663444 Q 511.0096711798839 235.20309477756285 512 256 Q 511.0096711798839 275.80657640232107 493.18375241779495 284.7195357833656 L 49.516441005802704 474.86266924564796 L 49.516441005802704 474.86266924564796 L 42.58413926499033 460.99806576402324 L 42.58413926499033 460.99806576402324 L 486.2514506769826 270.8549323017408 L 486.2514506769826 270.8549323017408 Q 491.20309477756285 267.88394584139263 494.174081237911 263.92263056092844 L 109.926499032882 263.92263056092844 L 109.926499032882 263.92263056092844 Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="feed-post">
+              <div class="head">
+                <div class="user">
+                  <figure><img class="profile-pic" src=""></figure>
+                  <h3 class="post-user-name"></h3>
+                </div>
+                <div>
+                  <p class="date"></p>
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">🌟 Big Milestone Achieved! 🌟</p>
+                <p class="text">
+                  I just finished my first JavaScript project—a simple to-do app 
+                  that lets users add, edit, and delete tasks. It might not seem 
+                  like much, but the journey to this point has been incredible.
+                </p>
+                <p class="text">
+                  I want to thank my mentors and peers who’ve guided me 
+                  through countless debugging sessions and late-night 
+                  learning marathons.
+                </p>
+                <p class="text">
+                  Next up: diving into React! 🚀
+                </p>
+                <p class="text">
+                  Any advice for someone starting out with React? I'd 
+                  love to hear your thoughts!
+                </p>
+                <p class="text">
+                  #JavaScript #CodingJourney #React #AlwaysLearning
+                </p>
+              </div>
+              <div class="interactions">
+                <div class="likes">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p class="num-of">230</p>
+                </div>
+                <div class="comments">
+                  <p>456 comments</p>
+                </div>
+              </div>
+              <div class="interaction-options">
+                <div class="option">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p>Likes</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>Comment</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p>Repost</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-share"></i>
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+            <div class="feed-post">
+              <div class="head">
+                <div class="user">
+                  <figure><img class="profile-pic" src=""></figure>
+                  <h3 class="post-user-name"></h3>
+                </div>
+                <div>
+                  <p class="date"></p>
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">💡 Rethinking Success 💡</p>
+                <p class="text">
+                  In today’s fast-paced world, we often equate success with 
+                  productivity. But sometimes, the most meaningful progress 
+                  comes from slowing down, reflecting, and focusing on what 
+                  truly matters.
+                </p>
+                <p class="text">
+                  Last week, I took a day off to volunteer at a local shelter. 
+                  The experience reminded me that success isn’t just about 
+                  achieving goals—it’s about making an impact and finding 
+                  fulfillment along the way.
+                </p>
+                <p class="text">How do you define success?</p>
+                <p class="text">#Leadership #PersonalGrowth #Impact</p>
+              </div>
+              <div class="interactions">
+                <div class="likes">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p class="num-of">453</p>
+                </div>
+                <div class="comments">
+                  <p>665 comments</p>
+                </div>
+              </div>
+              <div class="interaction-options">
+                <div class="option">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p>Likes</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>Comment</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p>Repost</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-share"></i>
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+            <div class="feed-post">
+              <div class="head">
+                <div class="user">
+                  <figure><img class="profile-pic" src=""></figure>
+                  <h3 class="post-user-name"></h3>
+                </div>
+                <div>
+                  <p class="date"></p>
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">🛠️ Building a People-First Culture 🛠️</p>
+                <p class="text">
+                  Employee well-being isn’t just a nice-to-have—it’s a business 
+                  imperative. That’s why we’re excited to roll out new initiatives 
+                  at Tony Roma's to support mental health, flexible work, 
+                  and professional development.
+                </p>
+                <p class="text">
+                  Our goal is simple: to create a workplace where people feel 
+                  valued, supported, and empowered to thrive.
+                </p>
+                <p class="text">
+                  What’s one thing your company is doing to prioritize employees? 
+                  Let’s share ideas and learn from each other!
+                </p>
+                <p class="text">#HR #EmployeeExperience #Culture</p>
+              </div>
+              <div class="interactions">
+                <div class="likes">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p class="num-of">243</p>
+                </div>
+                <div class="comments">
+                  <p>654 comments</p>
+                </div>
+              </div>
+              <div class="interaction-options">
+                <div class="option">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p>Likes</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>Comment</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p>Repost</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-share"></i>
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+            <div class="feed-post">
+              <div class="head">
+                <div class="user">
+                  <figure><img class="profile-pic" src=""></figure>
+                  <h3 class="post-user-name"></h3>
+                </div>
+                <div>
+                  <p class="date"></p>
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">💻 Debugging Is an Art Form 💻</p>
+                <p class="text">
+                  There’s nothing quite like the satisfaction of squashing a 
+                  stubborn bug after hours (or days!) of head-scratching.
+                </p>
+                <p class="text">
+                  Recently, I tackled a tricky issue in Python 
+                  involving indentation. The solution? Breaking it down, 
+                  asking questions, and staying persistent.
+                </p>
+                <p class="text">
+                  Every bug teaches a lesson—and this one reminded me of the 
+                  importance of patience and collaboration. To all my fellow 
+                  devs: what’s the toughest bug you’ve solved? 
+                  Share your stories below!
+                </p>
+                <p class="text">#CodingLife #Debugging #ProblemSolving</p>
+              </div>
+              <div class="interactions">
+                <div class="likes">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p class="num-of">123</p>
+                </div>
+                <div class="comments">
+                  <p>1002 comments</p>
+                </div>
+              </div>
+              <div class="interaction-options">
+                <div class="option">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p>Likes</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>Comment</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p>Repost</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-share"></i>
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+            <div class="feed-post">
+              <div class="head">
+                <div class="user">
+                  <figure><img class="profile-pic" src=""></figure>
+                  <h3 class="post-user-name"></h3>
+                </div>
+                <div>
+                  <p class="date"></p>
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">🎨 Design Is More Than Aesthetics 🎨
+                <p class="text">
+                  Design is about solving problems. It’s about understanding users, 
+                  anticipating their needs, and creating experiences that are not 
+                  just functional but delightful.
+                </p>
+                <p class="text">
+                  I recently had the chance to redesign our local website, and 
+                  seeing users interact with it has been so rewarding. 
+                  Small changes, like tweaking the color scheme or simplifying 
+                  navigation, can make a huge impact.
+                </p>
+                <p class="text">
+                  What’s a design challenge you’ve faced recently, 
+                  and how did you approach it? Let’s learn from each other!
+                </p>
+                <p class="text">#DesignThinking #UXDesign #Creativity</p>
+              </div>
+              <div class="interactions">
+                <div class="likes">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p class="num-of">91</p>
+                </div>
+                <div class="comments">
+                  <p>12 comments</p>
+                </div>
+              </div>
+              <div class="interaction-options">
+                <div class="option">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <p>Likes</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>Comment</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p>Repost</p>
+                </div>
+                <div class="option">
+                  <i class="fa-solid fa-share"></i>
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="networking">
+            <aside class="user-connections">
+              <h4 class="connections-title">Connections</h4>
+              <div class="connection-box">
+                <figure class="contact-image">
+                  <img src="" alt="" class="contact-profile">
+                </figure>
+                <div class="contact-info">
+                  <h4 class="contact-name"></h4>
+                  <p class="contact-location"></p>
+                </div>
+                <button class="go-to-profile">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="connection-box">
+                <figure class="contact-image">
+                  <img src="" alt="" class="contact-profile">
+                </figure>
+                <div class="contact-info">
+                  <h4 class="contact-name"></h4>
+                  <p class="contact-location"></p>
+                </div>
+                <button class="go-to-profile">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="connection-box">
+                <figure class="contact-image">
+                  <img src="" alt="" class="contact-profile">
+                </figure>
+                <div class="contact-info">
+                  <h4 class="contact-name"></h4>
+                  <p class="contact-location"></p>
+                </div>
+                <button class="go-to-profile">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="connection-box">
+                <figure class="contact-image">
+                  <img src="" alt="" class="contact-profile">
+                </figure>
+                <div class="contact-info">
+                  <h4 class="contact-name"></h4>
+                  <p class="contact-location"></p>
+                </div>
+                <button class="go-to-profile">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="see-more"><p>See More</p></div>
+            </aside>
+            <aside class="people-you-may-know">
+              <h4 class="people-title">
+                <i class="fa-solid fa-users"></i>Others You May Know
+              </h4>
+              <div class="connection-box">
+                <figure class="contact-image">
+                  <img src="" alt="" class="contact-profile">
+                </figure>
+                <div class="contact-info">
+                  <h4 class="contact-name"></h4>
+                  <p class="contact-location"></p>
+                </div>
+                <button class="add-user">
+                  <i class="fa-solid fa-user-plus"></i>
+                </button>
+              </div>
+              <div class="connection-box">
+                <figure class="contact-image">
+                  <img src="" alt="" class="contact-profile">
+                </figure>
+                <div class="contact-info">
+                  <h4 class="contact-name"></h4>
+                  <p class="contact-location"></p>
+                </div>
+                <button class="add-user">
+                  <i class="fa-solid fa-user-plus"></i>
+                </button>
+              </div>
+              <div class="connection-box">
+                  <figure class="contact-image">
+                    <img src="" alt="" class="contact-profile">
+                  </figure>
+                  <div class="contact-info">
+                    <h4 class="contact-name"></h4>
+                    <p class="contact-location"></p>
+                  </div>
+                  <button class="add-user">
+                    <i class="fa-solid fa-user-plus"></i>
+                  </button>
+              </div>
+              <div class="see-more"><p>See More</p></div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

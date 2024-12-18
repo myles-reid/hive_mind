@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+@import url(./utils.css);
+
+
+/*
+
+- Dark mode enabled (either by system or by choice)
+- Think of location for password  
+- Remove Andre's photo 
+  - Enable editable profile 
+  - Possibly enable profile's only posts 
+- Andre's fixes 
+- Remove emojis
+- Fix double face guy
+- Add responsiveness 
+- Add 2-3 more content fillers 
+
+*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  justify-content: space-between;
+  align-items: center;
+  height: 100svh;
+}
+
+.title-image {
+  height: 100svh;
+  width: 500px;
+  margin-left: 50px;
+  filter: brightness(0.8) hue-rotate(-2deg) saturate(1.5);
+}
+
+
+h2 {
+  font-size: 4rem;
+  color: var(--clr-text);
+  line-height: 100px;
+
+  span {
+    color: var(--clr-dark-accent);
+    font-size: 5rem;
+  }
+}
+
+.form-container {
+  background: var(--clr-page-bg);
+  padding: 20px;
+  width: 500px;
+  height: 560px;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+
+.login-form {
+  height: 400px;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  height: 60px;
+  line-height: 50px;
+  padding: 8px 13px;
+  border-radius: var(--app-border-rad);
+  background-color: var(--clr-form-bg);
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.forgot-password {
+  font-size: 0.9em;
+  color: #007bff;
+  cursor: pointer;
+  
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form-actions {
+  width: 100%;
+  justify-content: left;
+
+  button {
+    width: 140px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 25px;
+    color: #012;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+
+  }
+
+  .login-btn {
+    background-color: var(--clr-dark-accent);
+    color: #fff;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  .create-account-btn {
+    border: solid 2px var(--clr-dark-accent);
+    color: var(--clr-dark-accent);
+    font-weight: 600;
+    background-color: #fefefe;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+}
+.error-wrapper {
+  height: 100px;
+  width: 100%;
+}
+
+.error {
+  height: 80px;
+  line-height: 80px;
+  width: 100%;
+  color: #d12;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
