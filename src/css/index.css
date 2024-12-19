@@ -8,8 +8,6 @@
 - Dark mode enabled (either by system or by choice)
 - Think of location for password  
 - Remove Andre's photo 
-  - Enable editable profile 
-  - Possibly enable profile's only posts 
 - Andre's fixes 
 - Remove emojis
 - Fix double face guy
@@ -19,6 +17,7 @@
 */
 body {
   font-family: Arial, sans-serif;
+  background-color: #023;
 }
 
 main {
