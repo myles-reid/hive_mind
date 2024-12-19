@@ -1,58 +1,40 @@
-# Hive Mind
+# HiveMind
+## Overview
+HiveMind is a group project to make an example of a workplace based social web app. We built it using css and html best practices, and populated it with the randomUser API.
 
-Hive Mind is an interactive website designed for collaborative brainstorming and
-idea sharing. Users can create, organize, and refine ideas efficiently,
-fostering creativity and teamwork.
+## Authors
+
+- [@dave-sommerville](https://github.com/dave-sommerville) (Dave Sommerville)
+- [@mr-reutcky](https://github.com/mr-reutcky) (Samuel Reutcky)
+- [@myles-reid](https://github.com/myles-reid) (Myles Reid)
+
 
 ## Features
+- User Authentication: Users can log in with a username and password
+- Username: testUser
+- Password: testPass
+- Remember Me: Option to stay logged in across sessions (holding test username)
+- Forgot Password: Functionality to recover a forgotten password.
+- Profile Picture: Display of the user's profile image
+- Contacts: Number of user connections.
+- Suggestions: Recommendations for other users to connect with.
+- Upgrade Prompt: Option to gain access to all features with a premium account.
+- User Posts: Users can share experiences and allows for likes and comments 
+- Display: Showcase of user connections.
+### Languages Used 
+![HTML](https://img.shields.io/badge/WEB-HTML-%2391D5E8?style=for-the-badge&logo=html5&logoColor=white&labelColor=grey)
 
-- **User Authentication**: Secure login with the credentials:
-  - Username: `testUser`
-  - Password: `testPass`
-- **Interactive Dashboard**: A central hub for managing ideas.
-- **Collaboration Tools**: Allows users to brainstorm, share, and refine ideas.
-- **Responsive Design**: Optimized for various devices, ensuring a seamless user experience.
+![CSS](https://img.shields.io/badge/WEB-CSS-%2391D5E8?style=for-the-badge&logo=css3&logoColor=white&labelColor=grey)
 
-## Technologies Used
+![JavaScript](https://img.shields.io/badge/CODE-JAVASCRIPT-%2391D5E8?style=for-the-badge&logo=javascript&logoColor=white&labelColor=grey)
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Basic authentication implemented directly in JavaScript (for demo purposes)
-- **Hosting**: GitHub Pages
+### Say Hi
+If you have an comments or suggestions, please don't hesitate to reach out :)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=&labelColor=grey)](https://linkedin.com/in/dave-sommerville-2abb50326)
 
-## Getting Started
 
-### Access the Project
+[![Email](https://img.shields.io/badge/Email-dave.r.sommerville%40gmail.com-%23FF6F61?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dave.r.sommerville@gmail.com)
 
-You can view the live website here: [Hive Mind on GitHub Pages](https://mr-reutcky.github.io/hive-mind/home.html)
 
-### Clone the Repository
-
-To explore or modify the project locally:
-
-```bash
-git clone https://github.com/mr-reutcky/hive-mind.git
-```
-
-### Open Locally
-
-Navigate to the project directory and open `home.html` in your preferred web browser.
-
-## Usage Instructions
-
-1. Navigate to the [Hive Mind website](https://mr-reutcky.github.io/hive-mind/home.html).
-2. Log in using the credentials:
-   - **Username**: `testUser`
-   - **Password**: `testPass`
-3. Explore the interactive dashboard to brainstorm and organize ideas collaboratively.
-
-## Contributions
-
-Contributions are welcome! Feel free to fork this repository, make your changes, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-For any questions or feedback, please contact [Samuel Reutcky](https://github.com/mr-reutcky).
+### Preview
+![Webpage Preview](./src/img/scrnshot01.jpg)
